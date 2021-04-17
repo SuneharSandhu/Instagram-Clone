@@ -140,7 +140,7 @@ class RegistrationViewController: UIViewController {
         AuthManager.shared.registerNewUser(username: username, email: email, password: password) { registered in
             DispatchQueue.main.async {
                 if registered {
-                    
+                    self.dismiss(animated: true, completion: nil)
                 } else {
                     // failed
                     
