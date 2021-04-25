@@ -42,7 +42,7 @@ class UserFollowTableViewCell: UITableViewCell {
         let label = UILabel()
         label.numberOfLines = 1
         label.font = .systemFont(ofSize: 17, weight: .semibold)
-        label.text = "Sonu"
+        label.text = "John"
         return label
     }()
     
@@ -50,7 +50,7 @@ class UserFollowTableViewCell: UITableViewCell {
         let label = UILabel()
         label.numberOfLines = 1
         label.font = .systemFont(ofSize: 16, weight: .regular)
-        label.text = "@boisandhu"
+        label.text = "@johndoe"
         label.textColor = .secondaryLabel
         return label
     }()
