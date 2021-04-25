@@ -9,9 +9,9 @@ import Foundation
 
 /* Organize models later */
 
-public enum UserPostType {
-    case photo
-    case video
+public enum UserPostType: String {
+    case photo = "Photo"
+    case video = "Video"
 }
 
 enum Gender {
@@ -31,12 +31,13 @@ public struct UserPost {
     let comments: [PostComment]
     let createdDate: Date
     let taggedUsers: [User]
+    let owner: User
 }
 
 public struct User {
-    let id: String
     let username: String
     let name: (first: String, last: String)
+    let profilePhoto: URL
     let birthday: Date
     let gender: Gender
     let bio: String
